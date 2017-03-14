@@ -1,0 +1,86 @@
+loop begin
+Gonna read now! :3
+output = 0
+theText = P
+
+root locus plot request
+sending ack
+sent
+output = 0
+theText = 0.0 10.0 20
+vec =
+
+    0   10   20
+
+paramVec =
+
+    0   10   20
+
+aS =  4
+bS =  3
+rS =  20
+it2 = 0
+it2 =  1
+it2 =  2
+Elapsed time is 0.0270128 seconds.
+Gonna write now
+written, wee!
+loop begin
+Gonna read now! :3
+output = 0
+theText = P
+
+root locus plot request
+sending ack
+sent
+output = 0
+theText = 0.0 10.0 20
+vec =
+
+    0   10   20
+
+paramVec =
+
+    0   10   20
+
+aS =  4
+bS =  3
+rS =  20
+it2 = 0
+it2 =  1
+it2 =  2
+Elapsed time is 0.0270579 seconds.
+Gonna write now
+written, wee!
+loop begin
+Gonna read now! :3
+output = 0
+theText = P
+
+root locus plot request
+sending ack
+sent
+output = 0
+theText = 0.0 10.0 20
+vec =
+
+    0   10   20
+
+paramVec =
+
+    0   10   20
+
+aS =  4
+bS =  3
+rS =  20
+it2 = 0
+it2 =  1
+it2 =  2
+Elapsed time is 0.0270772 seconds.
+Gonna write now
+written, wee!
+loop begin
+Gonna read now! :3
+output =  127
+theText = 
+

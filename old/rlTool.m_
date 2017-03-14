@@ -1,0 +1,46 @@
+
+function tfOut=rlTest(gain)
+    %ommitting any check for the sake of speed 
+
+    %reg=global regG;
+    %sys=sysG;
+    %H=HG;
+    %F=FG;
+
+  reg=tf([1],[1]);   
+  sys=tf([2 1],[1 1 2]);
+  F=1;
+  H=1;
+
+    G=reg*sys
+    tfout=F*((G*gain)/(1+G*H*gain))
+    %tfout(1,:)=F*((G*gain(1,:))/(1+G*H*gain(1,:)));
+end
+
+
+function tfs=rlPlot(sys, reg, H, F)
+    %%TODO: handle this as matrix operations
+tic
+    hold on;
+    gain=0:0.1:10;
+    global sysG=sys;
+    global regG=reg;
+    global HG=H;
+    global FG=F;
+    gain=mat2cell(gain,1);
+    tfs=cellfun(@rlTest,gain,'UniformOutput',false)%rlTest(sys,reg,H,F,gain);
+    
+    %for i=0:0.1:10
+        %theTf=rlTest(sys, reg, H, F,i);
+        %theRoots=roots(cell2mat(theTf.den));
+        %h=plot(theRoots);
+        %set (h, "linestyle", "none"); 
+        %set (h, "marker", "*"); 
+    %end
+    hold off;
+    toc
+end
+
+function den=getFeedbackDen(a, b, k)
+den=a+b*k;
+end
